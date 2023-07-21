@@ -8,10 +8,6 @@ Paint Sales Competition Manager is a JavaFX application that helps manage paint 
 - [Features](#features)
 - [Technologies](#technologies)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 

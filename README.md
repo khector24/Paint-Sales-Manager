@@ -43,7 +43,6 @@ To run the application locally, follow these steps:
 ## Database Schema
 The application expects the following database schema:
 
-    ```bash
     CREATE TABLE PaintEmployee (
         id INT PRIMARY KEY AUTO_INCREMENT,
         name VARCHAR(100) NOT NULL

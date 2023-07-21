@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="520.0" xmlns="http://javafx.com/javafx"
+            fx:controller="com.rainbowacehardware.paintsalescompetitionmanager.Controllers.LoginPageController">
+<left>
+    <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #CB2228;"
+                BorderPane.alignment="CENTER">
+        <Label alignment="CENTER" layoutY="163.0" prefHeight="25.0" prefWidth="228.0" style="-fx-text-fill: #000;"
+               text="Rainbow">
+            <font>
+                <Font name="Verdana Bold Italic" size="20.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutY="188.0" prefHeight="25.0" prefWidth="228.0" style="-fx-text-fill: #fff;"
+               text=" ACE HARDWARE" textFill="WHITE">
+            <font>
+                <Font name="Verdana Bold" size="20.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutY="369.0" prefHeight="17.0" prefWidth="228.0"
+               text="Copyright © 2022.  All rights reserved." textFill="WHITE">
+            <font>
+                <Font size="10.0"/>
+            </font>
+        </Label>
+    </AnchorPane>
+</left>
+<right>
+    <AnchorPane prefHeight="400.0" prefWidth="332.0" style="-fx-background-color: #FFF;"
+                BorderPane.alignment="CENTER">
+        <Label alignment="CENTER" layoutX="1.0" layoutY="45.0" prefHeight="18.0" prefWidth="292.0"
+               style="-fx-text-fill: #000;" text="Delivery Scheduler" wrapText="true">
+            <font>
+                <Font name="Verdana Bold" size="24.0"/>
+            </font>
+        </Label>
+        <Label layoutX="31.0" layoutY="132.0" style="-fx-font-weight: bold;" text="Username:">
+            <font>
+                <Font name="System Bold" size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="31.0" layoutY="183.0" style="-fx-font-weight: bold;" text="Password:">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="usernameTxtfld" layoutX="110.0" layoutY="128.0" promptText="Enter your username"/>
+        <PasswordField fx:id="passwordFld" layoutX="110.0" layoutY="179.0" promptText="Enter your password"/>
+        <Button fx:id="loginBtn" layoutX="31.0" layoutY="251.0" mnemonicParsing="false"
+                onAction="#loginButtonOnAction" prefHeight="31.0" prefWidth="239.0"
+                style="-fx-background-color: #CB2228;" text="Login" textFill="WHITE" AnchorPane.leftAnchor="31.0"
+                AnchorPane.rightAnchor="23.0">
+            <font>
+                <Font name="Verdana Bold" size="13.0"/>
+            </font>
+        </Button>
+        <Button fx:id="closeBtn" layoutX="33.0" layoutY="308.0" mnemonicParsing="false"
+                onAction="#closeButtonOnAction" prefHeight="31.0" prefWidth="239.0"
+                style="-fx-background-color: #CB2228;" text="Close" textFill="WHITE" AnchorPane.leftAnchor="31.0"
+                AnchorPane.rightAnchor="23.0">
+            <font>
+                <Font name="Verdana Bold" size="13.0"/>
+            </font>
+        </Button>
+        <Label fx:id="warningLbl" alignment="CENTER" layoutX="1.0" layoutY="95.0" prefHeight="18.0"
+               prefWidth="292.0" textFill="RED"/>
+    </AnchorPane>
+</right>
+</BorderPane>

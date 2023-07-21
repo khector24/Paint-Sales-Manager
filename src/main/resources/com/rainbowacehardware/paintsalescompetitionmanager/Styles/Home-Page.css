@@ -1,0 +1,106 @@
+
+.main-container{
+    -fx-font-family: "Verdana";
+
+}
+
+.main-container-panes{
+    -fx-background-color: #CD2228;
+}
+
+.top-anchor-pane {
+    -fx-background-color: #CD2228;
+}
+
+.title-vbox {
+    -fx-pref-width: 170px;
+    -fx-border-width: 0 1px 0 0;
+    -fx-border-color: #C0C0C0;
+    -fx-border-style: dashed;
+    -fx-border-insets: 4px 2px;
+}
+
+.rainbow-label {
+    -fx-text-fill: #000;
+}
+
+.rainbow-label FontAwesomeIconView{
+    -fx-fill: BLUE;
+}
+
+.control-top-hbox{
+    -fx-padding: 0 7px;
+    -fx-spacing: 6px;
+}
+
+.control-top-hbox > .button{
+    -fx-pref-width: 110px;
+    -fx-pref-height: 32px;
+    -fx-background-color: #ececec;
+    -fx-text-fill: #000;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+.control-top-hbox > .button:hover{
+    -fx-background-color: #FFF;
+}
+
+.control-top-hbox > .button:pressed{
+    -fx-background-color: #bfbfbf;
+    -fx-text-fill: #000;
+}
+
+.control-top-hbox > .button FontAwesomeIconView{
+    -fx-fill: #CD2228;
+}
+
+.control-top-hbox > .menu-button {
+    -fx-pref-width: 110px;
+    -fx-pref-height: 32px;
+    -fx-background-color: #ececec;
+    -fx-text-fill: #000;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+.control-top-hbox > .menu-button FontAwesomeIconView {
+    -fx-fill: #CD2228;
+}
+
+.bottom-container {
+    -fx-background-color: #CD2228;
+}
+
+.bottom-container > .label {
+    -fx-text-fill: #FFF;
+    -fx-font-size: 9px;
+}
+
+.leaderboard-hbox {
+    -fx-pref-height: 70px;
+}
+
+.leaderboard-hbox > .label {
+    -fx-font-size: 20px;
+    -fx-pref-width: 260px;
+    -fx-pref-height: 50px;
+    -fx-alignment: CENTER-LEFT;
+}
+
+.leaderboard-hbox > .progress-bar{
+    -fx-pref-width: 280px;
+    -fx-pref-height: 35px;
+    -fx-accent: #00CC00;
+}
+
+.top-performers-label {
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+}
+
+FontAwesomeIconView{
+    -fx-fill: GOLD;
+}
+
+

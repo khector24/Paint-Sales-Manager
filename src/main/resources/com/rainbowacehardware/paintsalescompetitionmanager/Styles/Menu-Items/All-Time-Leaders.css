@@ -1,0 +1,21 @@
+
+
+.main-container {
+
+}
+
+.table-view-vbox {
+    -fx-padding: 8px 0 8px 8px;
+}
+
+.menu-control-vbox {
+    -fx-padding: 8px 0;
+    -fx-spacing: 8px;
+}
+
+.menu-control-vbox > .button {
+}
+
+.menu-control-vbox > .button FontAwesomeIconView {
+    -fx-fill: #000;
+}

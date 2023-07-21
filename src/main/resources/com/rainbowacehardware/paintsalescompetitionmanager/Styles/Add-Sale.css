@@ -1,0 +1,36 @@
+.main-container {
+
+}
+
+.content-hbox {
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+}
+
+.input-vbox {
+    -fx-border-color: #000;
+    -fx-spacing: 8px;
+    -fx-padding: 8px;
+}
+
+.top-button-hbox {
+    -fx-spacing: 3px;
+}
+
+.top-button-hbox > .button {
+    -fx-font-size: 9px;
+    -fx-pref-width: 48px;
+    -fx-pref-height: 24px;
+}
+
+.bottom-button-hbox {
+    -fx-spacing: 5px;
+}
+
+.bottom-button-hbox > .button {
+    -fx-text-fill: #000;
+}
+
+.control-bottom-vbox {
+    -fx-spacing: 5px;
+}

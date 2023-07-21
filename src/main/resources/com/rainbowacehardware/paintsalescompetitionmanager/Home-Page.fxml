@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="620.0" styleClass="main-container" stylesheets="@Styles/Home-Page.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rainbowacehardware.paintsalescompetitionmanager.Controllers.HomePageController">
+    <top>
+        <AnchorPane prefHeight="50.0" prefWidth="200.0" styleClass="top-anchor-pane">
+            <HBox prefHeight="50.0" prefWidth="620.0">
+                <VBox alignment="CENTER" prefHeight="50.0" prefWidth="180.0" styleClass="title-vbox">
+                    <Label alignment="CENTER" prefHeight="20.0" prefWidth="200.0" styleClass="rainbow-label" text="Rainbow">
+                        <font>
+                            <Font name="Verdana Bold Italic" size="16.0" />
+                        </font>
+                    </Label>
+                    <Label alignment="CENTER" prefHeight="20.0" prefWidth="199.0" text="ACE HARDWARE" textFill="WHITE">
+                        <font>
+                            <Font name="Verdana Bold Italic" size="16.0" />
+                        </font>
+                    </Label>
+                </VBox>
+                <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="450.0" styleClass="control-top-hbox">
+                    <Button fx:id="employeesBtn" mnemonicParsing="false" onAction="#employeesBtnOnAction" text="Employees">
+                        <graphic>
+                            <FontAwesomeIconView glyphName="USER" />
+                        </graphic>
+                    </Button>
+                    <Button fx:id="addSaleBtn" layoutX="387.0" layoutY="22.0" mnemonicParsing="false" onAction="#addSaleBtnOnAction" text="Add Sale">
+                        <graphic>
+                            <FontAwesomeIconView glyphName="PLUS" />
+                        </graphic>
+                    </Button>
+                    <MenuButton fx:id="rankingsMenuButton" mnemonicParsing="false" text="Rankings">
+                        <items>
+                            <MenuItem fx:id="currentTableMenuItem" mnemonicParsing="false" onAction="#currentTableMenuItemOnAction" text="Current Table" />
+                            <MenuItem fx:id="allTimeLeadersMenuItem" mnemonicParsing="false" onAction="#allTimeLeadersMenuItemOnAction" text="All Time Leaders" />
+                        </items>
+                        <graphic>
+                            <FontAwesomeIconView glyphName="TROPHY" />
+                        </graphic>
+                    </MenuButton>
+                    <Button fx:id="logoutBtn" mnemonicParsing="false" onAction="#logoutBtnOnAction" text="Logout">
+                        <graphic>
+                            <FontAwesomeIconView glyphName="SIGN_OUT" />
+                        </graphic>
+                    </Button>
+                </HBox>
+            </HBox>
+        </AnchorPane>
+    </top>
+    <left>
+        <Pane prefHeight="200.0" prefWidth="5.0" styleClass="main-container-panes" BorderPane.alignment="CENTER" />
+    </left>
+    <right>
+        <Pane prefHeight="200.0" prefWidth="5.0" styleClass="main-container-panes" BorderPane.alignment="CENTER" />
+    </right>
+    <center>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <HBox prefHeight="60.0" prefWidth="200.0">
+                <Label alignment="CENTER" prefHeight="60.0" prefWidth="564.0" styleClass="top-performers-label" text="This month's top performers">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+                <FontAwesomeIconView glyphName="BOLT" size="60" wrappingWidth="41.0" />
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="276.0" prefWidth="590.0">
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="leaderboard-hbox">
+                    <Label fx:id="firstPlaceLabel" text="Label" />
+                    <ProgressBar fx:id="firstPlaceProgressBar" prefWidth="200.0" progress="0.0" />
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="leaderboard-hbox">
+                    <Label fx:id="secondPlaceLabel" text="Label" />
+                    <ProgressBar fx:id="secondPlaceProgressBar" prefWidth="200.0" progress="0.0" />
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="leaderboard-hbox">
+                    <Label fx:id="thirdPlaceLabel" alignment="TOP_LEFT" text="Label" />
+                    <ProgressBar fx:id="thirdPlaceProgressBar" prefWidth="200.0" progress="0.0" />
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="183.0" prefHeight="100.0" prefWidth="200.0" styleClass="leaderboard-hbox">
+                    <Label fx:id="fourthPlaceLabel" alignment="TOP_LEFT" text="Label" />
+                    <ProgressBar fx:id="fourthPlaceProgressBar" prefWidth="200.0" progress="0.0" />
+                </HBox>
+            </VBox>
+        </VBox>
+    </center>
+    <bottom>
+        <AnchorPane prefHeight="11.0" prefWidth="200.0" styleClass="bottom-container" BorderPane.alignment="CENTER">
+            <Label alignment="CENTER" prefHeight="11.0" prefWidth="600.0" text="Copyright © 2022. All rights reserved." />
+        </AnchorPane>
+    </bottom>
+</BorderPane>

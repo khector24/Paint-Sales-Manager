@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="main-container" stylesheets="@../Styles/Menu-Items/Current-Table.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rainbowacehardware.paintsalescompetitionmanager.Controllers.MenuItems.CurrentTableController">
+    <Pane prefHeight="10.0" prefWidth="600.0" style="-fx-background-color: #CD2228;" />
+    <VBox layoutY="10.0" prefHeight="390.0" prefWidth="560.0" styleClass="table-view-vbox">
+        <TableView fx:id="currentLeadersTable" prefHeight="395.0" prefWidth="560.0">
+          <columns>
+              <TableColumn fx:id="idCol" prefWidth="44.0" text="Id" />
+              <TableColumn fx:id="associateCol" prefWidth="259.0" text="Associate" />
+              <TableColumn fx:id="quantityCol" prefWidth="83.0" text="Quantity Sold" />
+              <TableColumn fx:id="rankingCol" prefWidth="62.0" text="Ranking" />
+              <TableColumn fx:id="transactionCol" prefWidth="103.0" text="# of Transactions" />
+          </columns>
+        </TableView>
+    </VBox>
+    <VBox alignment="TOP_CENTER" layoutX="560.0" layoutY="36.0" prefHeight="174.0" prefWidth="40.0" styleClass="menu-control-vbox">
+        <Button fx:id="homeBtn" mnemonicParsing="false" onAction="#homeBtnOnAction">
+           <graphic>
+               <FontAwesomeIconView glyphName="HOME" />
+           </graphic>
+        </Button>
+        <Button fx:id="logoutBtn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#logoutBtnOnAction">
+           <graphic>
+               <FontAwesomeIconView glyphName="SIGN_OUT" />
+           </graphic>
+        </Button>
+    </VBox>
+</AnchorPane>

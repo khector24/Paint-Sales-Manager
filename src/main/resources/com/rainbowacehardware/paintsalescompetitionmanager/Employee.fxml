@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="350.0" prefWidth="700.0" styleClass="main-container" stylesheets="@Styles/Employee.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rainbowacehardware.paintsalescompetitionmanager.Controllers.EmployeeController">
+    <Pane prefHeight="10.0" prefWidth="700.0" style="-fx-background-color: #CD2228;" />
+    <HBox layoutY="10.0" prefHeight="340.0" prefWidth="700.0" styleClass="content-hbox">
+        <VBox prefHeight="281.0" prefWidth="239.0" styleClass="input-vbox">
+            <HBox prefHeight="18.0" prefWidth="217.0">
+                <Label prefHeight="27.0" prefWidth="70.0" text="Name:">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="USER" />
+                    </graphic>
+                </Label>
+                <Button fx:id="clearBtn" mnemonicParsing="false" onAction="#clearBtnOnAction" prefHeight="8.0" prefWidth="79.0" text="Clear">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="TIMES_CIRCLE" />
+                    </graphic>
+                </Button>
+                <Button fx:id="selectBtn" layoutX="154.0" layoutY="10.0" mnemonicParsing="false" onAction="#selectBtnOnAction" prefHeight="8.0" prefWidth="79.0" text="Select">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="MOUSE_POINTER" />
+                    </graphic>
+                </Button>
+            </HBox>
+            <TextField fx:id="nameTfld" prefHeight="32.0" />
+          <Label text="Phone Number:">
+              <graphic>
+                  <FontAwesomeIconView glyphName="PHONE" />
+              </graphic>
+          </Label>
+          <TextField fx:id="phoneTfld" layoutX="10.0" layoutY="36.0" prefHeight="32.0" />
+          <Label layoutX="10.0" layoutY="68.0" text="Role:">
+              <graphic>
+                  <FontAwesomeIconView glyphName="BOOK" />
+              </graphic>
+          </Label>
+          <TextField fx:id="roleTfld" layoutX="10.0" layoutY="196.0" prefHeight="32.0" />
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="control-bottom-vbox">
+                <Button fx:id="addBtn" mnemonicParsing="false" onAction="#addBtnOnAction" prefHeight="32.0" prefWidth="102.0" text="Add" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="PLUS" />
+                    </graphic>
+                </Button>
+                <Button fx:id="updateBtn" mnemonicParsing="false" onAction="#updateBtnOnAction" prefHeight="32.0" prefWidth="102.0" text="Update" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="PENCIL" />
+                    </graphic>
+                </Button>
+                <Button fx:id="deleteBtn" mnemonicParsing="false" onAction="#deleteBtnOnAction" prefHeight="32.0" prefWidth="102.0" text="Delete" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="TRASH" />
+                    </graphic>
+                </Button>
+                <Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#cancelBtnOnAction" prefHeight="32.0" prefWidth="102.0" text="Cancel/Close" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="TIMES" />
+                    </graphic>
+                </Button>
+            </VBox>
+        </VBox>
+        <TableView fx:id="employeeTable" prefHeight="340.0" prefWidth="461.0">
+            <columns>
+                <TableColumn fx:id="idCol" prefWidth="50.0" text="Id" />
+                <TableColumn fx:id="nameCol" prefWidth="136.0" text="Name" />
+                <TableColumn fx:id="phoneNumberCol" prefWidth="114.0" text="Phone Number" />
+                <TableColumn fx:id="roleCol" prefWidth="144.0" text="Role" />
+            </columns>
+        </TableView>
+    </HBox>
+</AnchorPane>

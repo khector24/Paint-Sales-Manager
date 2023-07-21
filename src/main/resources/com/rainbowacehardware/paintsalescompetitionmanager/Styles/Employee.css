@@ -1,0 +1,41 @@
+
+.main-container {
+    -fx-font-family: "Verdana";
+}
+
+.content-hbox {
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+}
+
+.input-vbox {
+    -fx-border-color: #000;
+    -fx-spacing: 8px;
+    -fx-padding: 6px;
+}
+
+.control-bottom-vbox {
+    -fx-spacing: 5px;
+}
+
+.control-bottom-vbox > .button{
+    -fx-pref-width: 210px;
+    -fx-pref-height: 32px;
+    -fx-background-color: #CD2228;
+    -fx-text-fill: #FFF;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.control-bottom-vbox > .button:hover{
+    -fx-background-color: #CD2200;
+}
+
+.control-bottom-vbox > .button:pressed{
+    -fx-background-color: #bfbfbf;
+    -fx-text-fill: #000;
+}
+
+.control-bottom-vbox > .button FontAwesomeIconView {
+    -fx-fill: #000;
+}

@@ -37,30 +37,30 @@ To run the application locally, follow these steps:
 
 1. Make sure you have Java and MySQL installed on your machine.
 2. Clone this repository to your local machine using the following command:
-
-```bash
-git clone https://github.com/khector24/PaintSalesCompetitionManager.git
+    ```bash
+    git clone https://github.com/khector24/PaintSalesCompetitionManager.git
 
 ## Database Schema
 The application expects the following database schema:
-``bash
-CREATE TABLE PaintEmployee (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100) NOT NULL
-);
 
-CREATE TABLE PaintSale (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    receipt VARCHAR(20) NOT NULL,
-    date DATE NOT NULL,
-    employee VARCHAR(100) NOT NULL,
-    quantity VARCHAR(10) NOT NULL
-);
+    ```bash
+    CREATE TABLE PaintEmployee (
+        id INT PRIMARY KEY AUTO_INCREMENT,
+        name VARCHAR(100) NOT NULL
+    );
 
-CREATE TABLE userAccounts (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    username VARCHAR(100) NOT NULL,
-    password VARCHAR(100) NOT NULL
-);
+    CREATE TABLE PaintSale (
+        id INT PRIMARY KEY AUTO_INCREMENT,
+        receipt VARCHAR(20) NOT NULL,
+        date DATE NOT NULL,
+        employee VARCHAR(100) NOT NULL,
+        quantity VARCHAR(10) NOT NULL
+    );
+
+    CREATE TABLE userAccounts (
+        id INT PRIMARY KEY AUTO_INCREMENT,
+        username VARCHAR(100) NOT NULL,
+        password VARCHAR(100) NOT NULL
+    );
 
 
